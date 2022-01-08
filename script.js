@@ -6,9 +6,6 @@ searchButton.addEventListener("click", ()=>{
   sendApiRequest()
 })
 
-function likeFunc(x){
-  x.classList.toggle("fa-thumbs-down")
-}
 
 
 //An asynchronous function to fetch data from the API.
@@ -33,7 +30,7 @@ function useApiData(data){
     document.querySelector("#content").innerHTML += `<img src ="${data[i].hdurl}" class = "responsive">`;
 
     //like button
-    document.querySelector("#content").innerHTML += `<button onclick="likeFunc(this)" class="fa fa-thumbs-up">LIKE</button>`;
+    document.querySelector("#content").innerHTML += `<button>LIKE</button>`;
     
 
   }

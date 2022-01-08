@@ -1,0 +1,13 @@
+/* CSS files add styling rules to your content */
+
+html {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    color: black;
+  }
+  
+  h1 {
+    font-style: italic;
+    color:coral;
+  }
+  

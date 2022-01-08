@@ -7,34 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
-    
-    <link rel="stylesheet"  href="https://unpkg.com/@shopify/polaris@7.5.0/build/esm/styles.css"/>
-    
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="/style.css">
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
   </head>
   <body>
     <h1>
       .- R O V E R S E L F I E S -.
     </h1>
-    <button id="search">
-      Search
-    </button>
+    <input id = "searchTerm" type = "text" placeholder="Do I look cute on mars?">
+    <button id="search">Search</button>
    
+    <!-- display cards-->
     <div id = "content"></div>
 
-        <!-- We will put our React component inside this div. -->
-        <div id="like_button_container"></div>
-
-        <!-- Load React. -->
-        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    
-        <!-- Load our React component. -->
-        <script src="like_button.js"></script>
+     
 
     
   </body>

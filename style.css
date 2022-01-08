@@ -11,3 +11,9 @@ html {
     color:coral;
   }
   
+  .responsive {
+
+    width: 100%;
+    height: auto;
+
+  }

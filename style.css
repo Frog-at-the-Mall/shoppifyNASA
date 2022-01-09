@@ -15,16 +15,16 @@
 
   }
 
+
  
 
 .container{
-  margin: 0;
   width: 100%;
   left: 50%;
   top: 50%;
   padding: 30px;
   box-shadow: 0 2px 8px rgb(194, 101, 58 ,.1) ;
-  background-color: #000000;
+  background-color: #ffffff;
 
 }
 .container i {
@@ -41,5 +41,9 @@
   transition: .4s;
 
 
+}
+
+.content{
+  width: 23%;
 }
 

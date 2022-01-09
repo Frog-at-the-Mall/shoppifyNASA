@@ -54,7 +54,7 @@ function useApiData(data){
     document.querySelector("#content").innerHTML += data[i].title;
     document.querySelector("#content").innerHTML += data[i].date;
     document.querySelector("#content").innerHTML += `<img src ="${data[i].hdurl}" class = "responsive">`;
-
+    document.querySelector("#content").innerHTML += data[i].explanation;
     //like button
     document.querySelector("#content").innerHTML += `<div class="container ">
     <i onclick="Toggle(this.id)" id = "btn${i}" class="fa fa-heart-o"></i>

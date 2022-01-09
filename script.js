@@ -1,4 +1,9 @@
+
+
 let searchButton = document.querySelector("#search")
+
+
+
 
 //Add an event listener to the button that runs the function sendApiRequest when it is clicked
 searchButton.addEventListener("click", ()=>{
@@ -30,8 +35,10 @@ function useApiData(data){
     document.querySelector("#content").innerHTML += `<img src ="${data[i].hdurl}" class = "responsive">`;
 
     //like button
-    document.querySelector("#content").innerHTML += `<button>LIKE</button>`;
+    document.querySelector("#content").innerHTML += `<button class="like-Unlike" href="">Like</button>`;
     document.querySelector("#content").innerHTML += `<p></p>`;
+    
+
     
 
   }

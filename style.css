@@ -2,19 +2,12 @@
 /* @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css'); */
 
 
-  html {
-    font-family: helvetica, arial, sans-serif;
-    margin: 2em;
-    background-color: black;
-    color: coral;
-  }
-  
- 
- body{
-   background-color: black;
-   color: coral ;
- }
-  
+*{
+  margin:0;
+  padding: 0;
+  outline: 0;
+}
+
   .responsive {
 
     width: 100%;
@@ -22,60 +15,35 @@
 
   }
 
-  #content{
+ 
 
-    background-color: black;
-    color: rgb(194, 101, 58);
-    
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  box-shadow: 0 2px 8px rgb(194, 101, 58 ,.1) ;
+  border-radius: 50px;
+  background-color: #fafafa;
 
-  }
+}
+.container i {
 
-  .social-like,
-  .social-dislike {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    width: 48%;
-    background-color: #ca5a0f;
-    color: #fff;
-  }
-  
-  .social-like {
-    border-top-left-radius: 5px;
-    text-align: right;
-  }
-  
-  .like:focus,
-  .like:active,
-  .dislike:focus,
-  .dislike:active {
+  font-size: 5rem;
+  transition: .4s;
 
-    padding: 40%;
-    
-  }
-  
-  .social-dislike {
-    border-top-right-radius: 5px;
-    text-align: left;
-  }
-  
-  .count,
-  .like,
-  .dislike {
-    padding: 10px;
-  }
-  
-  .count,
-  .dislike {
-    background-color: #bd4a16;
-    border-radius: 50%;
-    font-size: 12px;
-  }
-  
-  .dislike {
-    margin-left: -13px;
-  }
-  
-  .count {
-    margin-right: -10px;
-  }
+}
+
+.container:hover i{
+
+  color:#f50057;
+
+}
+
+.fas{
+
+  color:#f50057;
+  transition: .4s;
+
+}

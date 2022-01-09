@@ -3,6 +3,24 @@
 let searchButton = document.querySelector("#search")
 
 
+var btn = document.getElementById('btn');
+
+function Toggle(){
+
+  console.log("helohelohelo")
+
+  if(btn.classList.contains("fa-heart-o")){
+
+    console.log("goodbye goodbbye")
+    btn.classList.remove("fa-heart-o");
+    btn.classList.add("fa-heart");
+    
+
+  }else{
+    btn.classList.remove("fa-heart");
+    btn.classList.add("fa-heart-o")
+  }
+}
 
 
 //Add an event listener to the button that runs the function sendApiRequest when it is clicked

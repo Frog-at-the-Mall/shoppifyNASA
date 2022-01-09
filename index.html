@@ -12,9 +12,10 @@
 
 
     <!-- import the webpage's javascript file -->
+    <script src="https://use.fontawesome.com/0d96186ceb.js"></script>    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
     <script src="/script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     
 
   </head>
@@ -22,19 +23,16 @@
     <h1>
       .- R O V E R S E L F I E S -.
     </h1>
+
+    <!---search term-->
     <input id = "searchTerm" type = "text" placeholder="Do I look cute on mars?">
     <button id="search">Search</button>
     <p></p>
 
-    <button class="social-like">
-      <span class="like"><i class="glyphicon glyphicon-thumbs-up"></i></span>
-      <span class="count">15</span>
-    </button>
-    &nbsp;
-    <button class="social-dislike">
-      <span class="dislike">10</span>
-      <span class="like"><i class="glyphicon glyphicon-thumbs-down"></i></span>
-    </button>
+    <!-- button test-->
+    <div class="container">
+      <i onclick="Toggle()" id = "btn" class="fa fa-heart-o"></i>
+    </div>
    
     <!-- display cards-->
     <div class= "card" id = "content">

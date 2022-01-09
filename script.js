@@ -2,23 +2,26 @@
 
 let searchButton = document.querySelector("#search")
 
+let openHeart = "fa-heart-o"
+let closedHeart = "fa-heart"
+
 
 var btn = document.getElementById('btn');
 
-function Toggle(){
+function Toggle(clickedID){
 
   console.log("helohelohelo")
 
-  if(btn.classList.contains("fa-heart-o")){
+  if(document.getElementById(clickedID).classList.contains(openHeart)){
 
     console.log("goodbye goodbbye")
-    btn.classList.remove("fa-heart-o");
-    btn.classList.add("fa-heart");
+    document.getElementById(clickedID).classList.remove(openHeart);
+    document.getElementById(clickedID).classList.add(closedHeart);
     
 
   }else{
-    btn.classList.remove("fa-heart");
-    btn.classList.add("fa-heart-o")
+    document.getElementById(clickedID).classList.remove(closedHeart);
+    document.getElementById(clickedID).classList.add(openHeart);
   }
 }
 
@@ -53,7 +56,9 @@ function useApiData(data){
     document.querySelector("#content").innerHTML += `<img src ="${data[i].hdurl}" class = "responsive">`;
 
     //like button
-    document.querySelector("#content").innerHTML += `<button class="like-Unlike" href="">Like</button>`;
+    document.querySelector("#content").innerHTML += `<div class="container ">
+    <i onclick="Toggle(this.id)" id = "btn${i}" class="fa fa-heart-o"></i>
+  </div>`;
     document.querySelector("#content").innerHTML += `<p></p>`;
     document.querySelector("#content").innerHTML += `<p></p>`;
 

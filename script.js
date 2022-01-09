@@ -31,6 +31,7 @@ function useApiData(data){
 
     //like button
     document.querySelector("#content").innerHTML += `<button>LIKE</button>`;
+    document.querySelector("#content").innerHTML += `<p></p>`;
     
 
   }

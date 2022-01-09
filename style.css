@@ -1,15 +1,19 @@
 /* CSS files add styling rules to your content */
+/* @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css'); */
 
-html {
+
+  html {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
-    color: black;
+    background-color: black;
+    color: coral;
   }
   
-  h1 {
-    font-style: italic;
-    color:coral;
-  }
+ 
+ body{
+   background-color: black;
+   color: coral ;
+ }
   
   .responsive {
 
@@ -20,12 +24,58 @@ html {
 
   #content{
 
-    color: rgb(70, 16, 172);
+    background-color: black;
+    color: rgb(194, 101, 58);
     
 
   }
 
-  .heart {
-    font-size: 25px;
-    color:red;
+  .social-like,
+  .social-dislike {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 48%;
+    background-color: #ca5a0f;
+    color: #fff;
+  }
+  
+  .social-like {
+    border-top-left-radius: 5px;
+    text-align: right;
+  }
+  
+  .like:focus,
+  .like:active,
+  .dislike:focus,
+  .dislike:active {
+
+    padding: 40%;
+    
+  }
+  
+  .social-dislike {
+    border-top-right-radius: 5px;
+    text-align: left;
+  }
+  
+  .count,
+  .like,
+  .dislike {
+    padding: 10px;
+  }
+  
+  .count,
+  .dislike {
+    background-color: #bd4a16;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+  .dislike {
+    margin-left: -13px;
+  }
+  
+  .count {
+    margin-right: -10px;
   }

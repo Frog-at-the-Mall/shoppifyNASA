@@ -18,32 +18,28 @@
  
 
 .container{
-  position: relative;
+  margin: 0;
+  width: 100%;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
   padding: 30px;
   box-shadow: 0 2px 8px rgb(194, 101, 58 ,.1) ;
-  border-radius: 50px;
-  background-color: #fafafa;
+  background-color: #000000;
 
 }
 .container i {
 
   font-size: 5rem;
   transition: .4s;
+  width: 10%;
 
 }
 
 .container:hover i{
 
   color:#f50057;
-
-}
-
-.fas{
-
-  color:#f50057;
   transition: .4s;
 
+
 }
+

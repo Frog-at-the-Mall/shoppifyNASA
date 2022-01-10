@@ -1,5 +1,4 @@
 
-
 let searchButton = document.querySelector("#search")
 
 let openHeart = "fa-heart-o"
@@ -7,6 +6,8 @@ let closedHeart = "fa-heart"
 
 
 var btn = document.getElementById('btn');
+var test = document.getElementById('start')
+
 
 function Toggle(clickedID){
 
@@ -28,16 +29,21 @@ function Toggle(clickedID){
 
 //Add an event listener to the button that runs the function sendApiRequest when it is clicked
 searchButton.addEventListener("click", ()=>{
+  var startDate = document.getElementById("start").value
+  var endDate = document.getElementById("end").value
+
   console.log("button pressed")
-  sendApiRequest()
+  console.log(startDate)
+  console.log(endDate)
+  sendApiRequest(startDate,endDate)
 })
 
 
 
 //An asynchronous function to fetch data from the API.
-async function sendApiRequest(){
+async function sendApiRequest(startDate, endDate){
   let apiKey = "C3EBsx1hGG1Teh3moTIrMo7MvOmnLYkbDSyiytaS"
-  let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=10`);
+  let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`);
   console.log(response)
   let data = await response.json()
   console.log(data)

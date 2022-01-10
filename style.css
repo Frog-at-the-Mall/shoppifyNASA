@@ -3,8 +3,8 @@
 
 
 *{
-  margin:0;
-  padding: 0;
+  margin: 0px;
+  padding: 10px;
   outline: 0;
 }
 
@@ -13,6 +13,11 @@
     width: 100%;
     height: auto;
 
+  }
+
+  img{
+
+    width: 90%;
   }
 
 
@@ -29,21 +34,15 @@
 }
 .container i {
 
-  font-size: 5rem;
+  font-size: 2rem;
   transition: .4s;
-  width: 10%;
 
 }
 
 .container:hover i{
-
+  width: 10%;
   color:#f50057;
   transition: .4s;
 
 
 }
-
-.content{
-  width: 23%;
-}
-

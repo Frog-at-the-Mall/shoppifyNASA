@@ -51,13 +51,19 @@ function useApiData(data){
 
   for(let i = 0; i < data.length; i++){
 
-    document.querySelector("#content").innerHTML += data[i].title;
-    document.querySelector("#content").innerHTML += data[i].date;
-    document.querySelector("#content").innerHTML += `<img src ="${data[i].hdurl}" class = "responsive">`;
-    document.querySelector("#content").innerHTML += data[i].explanation;
+    // document.querySelector("#content").innerHTML += data[i].title;
+    // document.querySelector("#content").innerHTML += data[i].date;
+    // document.querySelector("#content").innerHTML += `<img src ="${data[i].hdurl}" class = "responsive">`;
+    // document.querySelector("#content").innerHTML += data[i].explanation;
     //like button
-    document.querySelector("#content").innerHTML += `<div class="container ">
+    document.querySelector("#content").innerHTML += 
+  `<div class="container">
+    <h1>${data[i].title}</h1>
+    <p>${data[i].date}</p>
+    <img src ="${data[i].hdurl}" class = "responsive">
+    <p>${data[i].explanation}</p>
     <i onclick="Toggle(this.id)" id = "btn${i}" class="fa fa-heart-o"></i>
+    
   </div>`;
     document.querySelector("#content").innerHTML += `<p></p>`;
     document.querySelector("#content").innerHTML += `<p></p>`;

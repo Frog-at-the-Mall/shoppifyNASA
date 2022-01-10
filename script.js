@@ -11,11 +11,9 @@ var test = document.getElementById('start')
 //change state of heart when clicked
 function Toggle(clickedID){
 
-  console.log("helohelohelo")
 
   if(document.getElementById(clickedID).classList.contains(openHeart)){
 
-    console.log("goodbye goodbbye")
     document.getElementById(clickedID).classList.remove(openHeart);
     document.getElementById(clickedID).classList.add(closedHeart);
     
@@ -57,11 +55,7 @@ function useApiData(data){
 
   for(let i = 0; i < data.length; i++){
 
-    // document.querySelector("#content").innerHTML += data[i].title;
-    // document.querySelector("#content").innerHTML += data[i].date;
-    // document.querySelector("#content").innerHTML += `<img src ="${data[i].hdurl}" class = "responsive">`;
-    // document.querySelector("#content").innerHTML += data[i].explanation;
-    //like button
+    
     document.querySelector("#content").innerHTML += 
 
       `<div class="container">

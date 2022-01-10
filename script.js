@@ -1,14 +1,14 @@
 
-let searchButton = document.querySelector("#search")
 
 let openHeart = "fa-heart-o"
 let closedHeart = "fa-heart"
-
+let searchButton = document.querySelector("#search")
 
 var btn = document.getElementById('btn');
 var test = document.getElementById('start')
 
 
+//change state of heart when clicked
 function Toggle(clickedID){
 
   console.log("helohelohelo")
@@ -27,7 +27,7 @@ function Toggle(clickedID){
 }
 
 
-//Add an event listener to the button that runs the function sendApiRequest when it is clicked
+//event listener button that runs the function sendApiRequest when it is clicked
 searchButton.addEventListener("click", ()=>{
   var startDate = document.getElementById("start").value
   var endDate = document.getElementById("end").value
@@ -40,7 +40,7 @@ searchButton.addEventListener("click", ()=>{
 
 
 
-//An asynchronous function to fetch data from the API.
+// async function to fetch data from the nasaAPI.
 async function sendApiRequest(startDate, endDate){
   let apiKey = "C3EBsx1hGG1Teh3moTIrMo7MvOmnLYkbDSyiytaS"
   let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`);
@@ -51,7 +51,7 @@ async function sendApiRequest(startDate, endDate){
 }
 
 
-//function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
+//display data
 function useApiData(data){
   
 
@@ -63,14 +63,17 @@ function useApiData(data){
     // document.querySelector("#content").innerHTML += data[i].explanation;
     //like button
     document.querySelector("#content").innerHTML += 
-  `<div class="container">
-    <h1>${data[i].title}</h1>
-    <p>${data[i].date}</p>
-    <img src ="${data[i].hdurl}" class = "responsive">
-    <p>${data[i].explanation}</p>
-    <i onclick="Toggle(this.id)" id = "btn${i}" class="fa fa-heart-o"></i>
-    
-  </div>`;
+
+      `<div class="container">
+      
+        <h1>${data[i].title}</h1>
+        <p>${data[i].date}</p>
+        <img src ="${data[i].hdurl}" class = "responsive">
+        <p>${data[i].explanation}</p>
+        <i onclick="Toggle(this.id)" id = "btn${i}" class="fa fa-heart-o"></i>
+        
+      </div>`;
+
     document.querySelector("#content").innerHTML += `<p></p>`;
     document.querySelector("#content").innerHTML += `<p></p>`;
 

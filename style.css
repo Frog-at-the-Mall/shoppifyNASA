@@ -2,7 +2,7 @@
 
 *{
   margin: 0px;
-  padding: 10px;
+  padding: 20px;
   outline: 0;
   
 }
@@ -15,18 +15,16 @@ body{
 
 }
 
-img{
-  width: 90%;
 
-}
 
 .responsive {
     width: 100%;
-    height: auto;
+    height: 100;
 
 }
 
 .container{
+  
   width: 100%;
   height: 100%;
   left: 50%;

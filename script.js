@@ -71,9 +71,6 @@ function useApiData(data){
     document.querySelector("#content").innerHTML += `<p></p>`;
     document.querySelector("#content").innerHTML += `<p></p>`;
 
-    
-
-    
 
   }
 
